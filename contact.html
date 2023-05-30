@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <main>
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Politiek Partij</a>
+                <!-- dropdown button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample01">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="false">contact</a>
+                        </li>
+                        <!-- standpunt dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                                aria-expanded="false">standpunten</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="sp1.html">standpunt 1</a></li>
+                                <li><a class="dropdown-item" href="sp2.html">standpunt 2</a></li>
+                                <li><a class="dropdown-item" href="sp3.html">standpunt 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <!-- einde navbar -->
+
+    <!-- Wrapper container -->
+    <h1 class="text-center">Neem contact op!</h1>
+    <div class="container py-4">
+
+        <!-- Bootstrap 5 starter form -->
+        <form id="contactForm">
+
+            <!-- Naam input -->
+            <div class="mb-3">
+                <label class="form-label" for="name">Naam</label>
+                <input class="form-control" id="name" type="text" placeholder="Naam" />
+            </div>
+
+            <!-- Email addres input -->
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Adres</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email adres" />
+            </div>
+
+            <!-- bericht input -->
+            <div class="mb-3">
+                <label class="form-label" for="message">Bericht</label>
+                <textarea class="form-control" id="message" type="text" placeholder="typ je tekst hier..."
+                    style="height: 10rem;"></textarea>
+            </div>
+
+            <!-- Form submit button -->
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit">Verzend</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
